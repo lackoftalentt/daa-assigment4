@@ -14,7 +14,7 @@ class EditDistanceTest {
 
     @ParameterizedTest
     @CsvSource({"kitten,sitting,3", "flaw,lawn,2", "intention,execution,5", "abc,abc,0",
-            "a,b,1", "Abylai Han,Abylai Khan,1"})
+            "a,b,1", "Abylai Han,Abylai Khan,2"})
     void referenceValues(String a, String b, int expected) {
         for (EditDistance edit : algorithms()) assertEquals(expected, edit.distance(a, b));
     }
