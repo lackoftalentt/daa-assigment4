@@ -1,0 +1,6 @@
+target/
+.venv/
+__pycache__/
+*.zip
+.idea/
+*.iml
